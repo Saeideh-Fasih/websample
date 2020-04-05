@@ -1,0 +1,108 @@
+body{
+    background-color:#f5f5f5;
+    font-family:sans-serif;
+    direction: rtl;
+    margin: 0;
+    
+}
+
+.BoxDiv{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    height: 1000px;
+    position:relative;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+}
+.LogoDiv{
+    float: right;
+   
+}
+
+.SearchDiv{
+    float: left;
+    direction: ltr;
+    padding-top: 65px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.SearchInput{
+    width: 380px;
+    height: 34px;
+    background-color:white;
+    color: brown;
+    font-size: 14px;
+    border: solid 1px #e6e6e6;
+    padding-right: 15px;
+    outline: none;
+    direction: rtl;
+}
+
+.btnsearch{
+    background-color: #f5f5f5;
+    position: absolute;
+    height: 38px;
+    padding: 0 18px;
+    border: solid 1px #e6e6e6;
+}
+
+.menuDiv{
+    background-color: #5f5f5f;
+     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,.12);
+    
+}
+
+.menuDiv > ul{
+   margin-top: 0;
+    list-style-type: none;
+}
+
+.menuDiv > ul > li{
+    display: inline-block;
+}
+
+.menuDiv > ul > li > a{
+text-decoration: none;
+display: inline-block;
+    padding: 10px 15px;
+    color: white;
+}
+
+.menuDiv > ul > li > a:hover{
+    color: cadetblue;
+   
+
+}
+
+.SubMenuDiv{
+    position: relative;
+    padding-left: 23px;
+    background: 
+}
+
+.arrowIcon{
+    color: black;
+    position: absolute;
+    top: 16px;
+}
+
+.subMenu{
+    position: absolute;
+    background-color: white;
+    width: 240px;
+    padding: 0;  
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,.12);
+    display:none;
+}
+
+.subMenu li{
+display: block;
+    padding: 8px 15px;
+    border-bottom: solid 1px #ededed;
+}
+
+.subMenu li a{
+    text-decoration: none;
+    color:#272727;
+}
