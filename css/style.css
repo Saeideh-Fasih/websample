@@ -56,10 +56,12 @@ body{
 .menuDiv > ul{
    margin-top: 0;
     list-style-type: none;
+   
 }
 
 .menuDiv > ul > li{
     display: inline-block;
+    padding-right: 20px;
 }
 
 .menuDiv > ul > li > a{
@@ -77,14 +79,17 @@ display: inline-block;
 
 .SubMenuDiv{
     position: relative;
-    padding-left: 23px;
-    background: 
+    
+}
+.SubMenuDiv > a {
+    padding-left: 25px;
 }
 
 .arrowIcon{
-    color: black;
+    color:white;
     position: absolute;
     top: 16px;
+    left: 2px;
 }
 
 .subMenu{
@@ -107,4 +112,6 @@ display: block;
     color:#272727;
 }
 
-test test tests
+.subItem:hover{
+    background-color: beige;
+}

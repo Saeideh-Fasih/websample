@@ -5,22 +5,42 @@
 <meta charset="utf-8"/>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/44dc6eb57e.js" crossorigin="anonymous"></script>
-    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 <script>
     $(document).ready(function(){
         $(".menuDiv > ul > li > a").hover(function(){
             $(this).parent().find(".subMenu").show();
             $(this).css("background-color","black");
+           
             
         },function(){
             $(this).parent().find(".subMenu").hide();
              $(this).css("background-color","#5f5f5f");
+         
         });
         $(".subMenu").hover(function(){
             $(this).show();
         },function(){
             $(this).hide();
         });
+        $(".subMenu").hover(function(){
+            $(this).show();
+            $(this).parent().find(".MyLink").css("background-color","black");
+            
+        },function(){
+            $(this).hide();
+             $(this).parent().find(".MyLink").css("background-color","#5f5f5f");
+        });
+        
+        
+         $(".subMenu").hover(function(){
+            $(this).show();
+            $(this).parent().find(".MyLink").css("color","cadetblue");
+        },function(){
+            $(this).hide();
+             $(this).parent().find(".MyLink").css("color","white");
+        });
+        
     });
     </script>
 </head>
@@ -43,8 +63,8 @@
            <li><a href="#">خانه</a></li>
            <li><a href="#">محصولات</a></li>
            <li class="SubMenuDiv">
-               <a href="#">دسته بندی</a>
-               <i class=" arrowIcon fas fa-caret-down"></i>
+               <a class="MyLink" href="#">دسته بندی</a>
+           <i class="arrowIcon fas fa-caret-down"></i>
                <ul class="subMenu">
                <li class="subItem">کودک<a href="#"></a></li>
                <li class="subItem">بانوان<a href="#"></a></li>
@@ -52,7 +72,7 @@
                </ul>
             </li>
            <li class="SubMenuDiv">
-               <a href="#">شعب</a>
+               <a class="MyLink" href="#">شعب</a>
                <i class="arrowIcon fas fa-caret-down"></i>
                 <ul class="subMenu">
                <li class="subItem">تهران<a href="#"></a></li>
